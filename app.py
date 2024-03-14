@@ -13,13 +13,12 @@ def search_gitignore_files(root_folder):
         for file in files:
             if file.endswith(".gitignore"):
                 root = root.replace(root_folder,"")
-                gitignore_files.append(root+"\\"+ file)
+                gitignore_files.append(root+"/"+ file)
     return gitignore_files
 
 
 # Function to read the content of a gitignore file
 def read_gitignore_file(filename):
-    filename = "./resource/Actionscript.gitignore"
     with open(filename, 'r') as file:
         content = file.read()
     return content
@@ -69,7 +68,7 @@ def main():
         st.write(f"Selected gitignore file: {selected_file}")
         
         # Display gitignore data
-        filepath = ".\\"+resource_folder+selected_file
+        filepath = "./"+resource_folder+selected_file
         print(filepath)
         gitignore_content = read_gitignore_file(filepath)
         st.code(gitignore_content, language="plaintext")
