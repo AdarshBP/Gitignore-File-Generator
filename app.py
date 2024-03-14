@@ -19,6 +19,7 @@ def search_gitignore_files(root_folder):
 
 # Function to read the content of a gitignore file
 def read_gitignore_file(filename):
+    filename = "./resource/Actionscript.gitignore"
     with open(filename, 'r') as file:
         content = file.read()
     return content
