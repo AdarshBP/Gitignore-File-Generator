@@ -47,6 +47,9 @@ def main():
 
      # Information about the source of gitignore files
     st.sidebar.write("Gitignore files sourced from: [github/gitignore](https://github.com/github/gitignore)")
+
+     # Information about the source of gitignore files
+    st.sidebar.write("Feel free to contribute to this project!:  [Gitignore-File-Generator](https://github.com/AdarshBP/Gitignore-File-Generator)")
     
     # Information about gitignore files
     st.sidebar.markdown("""
@@ -73,14 +76,6 @@ def main():
         # Display gitignore data
         gitignore_content = read_gitignore_file(resource_folder+"//"+selected_file)
         st.code(gitignore_content, language="plaintext")
-
-    # Footer with project link and invitation to contribute
-    st.sidebar.markdown("""
-    ---
-    **Project Link**: [Your Project](https://github.com/AdarshBP/Gitignore-File-Generator)
-
-    Feel free to contribute to this project!
-    """) 
 
 if __name__ == "__main__":
     main()
