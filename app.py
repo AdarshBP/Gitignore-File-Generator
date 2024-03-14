@@ -1,16 +1,12 @@
 import os
+import sys
 import streamlit as st
+import path
+
+dir = path.Path(__file__).abspath()
+sys.path.append(dir.parent.parent)
 
 # Function to search for gitignore files in the resource folder and subfolder contents of it 
-
-
-# def search_gitignore_files(resource_folder,appendName=''):
-#     gitignore_files = []
-#     for filename in os.listdir(resource_folder):
-#         if filename.endswith(".gitignore"):
-#             gitignore_files.append(appendName,filename)
-#     return gitignore_files
-
 def search_gitignore_files(root_folder):
     gitignore_files = []
     for root, dirs, files in os.walk(root_folder):
@@ -21,11 +17,9 @@ def search_gitignore_files(root_folder):
     return gitignore_files
 
 
-
-
 # Function to read the content of a gitignore file
 def read_gitignore_file(filename):
-    with open(os.path.join(filename), "r") as file:
+    with open(filename, 'r') as file:
         content = file.read()
     return content
 
