@@ -68,7 +68,7 @@ def main():
         st.write(f"Selected gitignore file: {selected_file}")
         
         # Display gitignore data
-        gitignore_content = read_gitignore_file(resource_folder+"//"+selected_file)
+        gitignore_content = read_gitignore_file(resource_folder+"/"+selected_file)
         st.code(gitignore_content, language="plaintext")
 
 if __name__ == "__main__":
