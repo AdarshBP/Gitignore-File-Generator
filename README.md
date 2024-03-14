@@ -2,6 +2,8 @@
 
 ![generate-gitignore demo Gif](/demo.gif){:width="400px" height="300px"}
 
+<img src="/demo.gif" width="400" height="300">
+
 
 ## Description
 The GitIgnore File Generator is a Streamlit application that generates `.gitignore` files for your projects based on predefined templates for various programming languages, frameworks, and tools. It simplifies the process of creating GitIgnore files, ensuring that your version control repositories are properly configured to ignore unnecessary files and directories.
