@@ -77,7 +77,7 @@ def main():
     # Footer with project link and invitation to contribute
     st.sidebar.markdown("""
     ---
-    **Project Link**: [Your Project](https://github.com/yourusername/yourproject)
+    **Project Link**: [Your Project](https://github.com/AdarshBP/Gitignore-File-Generator)
 
     Feel free to contribute to this project!
     """) 
