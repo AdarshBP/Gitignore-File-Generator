@@ -1,6 +1,6 @@
 # GitIgnore File Generator
 
-![generate-gitignore demo Gif](/demo.gif)
+![generate-gitignore demo Gif](/demo.gif){:width="400px" height="300px"}
 
 
 ## Description
